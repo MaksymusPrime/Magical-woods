@@ -5,7 +5,7 @@
 }
 
 :root{
-
+--index: calc(1vw + 1vh);   
 }
 
 @font-face  {
@@ -32,6 +32,18 @@ body {
 
 .main-header    {
     position: relative;
+    color: #FFFAD7;
+    text-shadow: 0 0 15px #9d822b;
+
+}
+
+.main-header::after {
+    content: '';
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 300px;
+    background-image: url(/img/ground.png);
 
 }
 
@@ -41,6 +53,8 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .layer  {
@@ -49,6 +63,42 @@ body {
     position: absolute;
     background-size: cover;
     background-position: center;
+    will-change: transform;
+    z-index: 2;
+}
+
+.layers_base    {
+    transform: translate3d(0, calc(var(--scrollTop) / 1.6 ), 0);
+    z-index: 0;
+}
+
+
+.layers_middle  {
+    transform: translate3d(0, calc(var(--scrollTop) / 2.5 ), 0);
+}
+
+.layers_front   {
+
+    transform: translate3d(0, calc(var(--scrollTop) / 6 ), 0);
+}
+
+.layers_header  {
+    z-index: 1;
+    transform: translate3d(0, calc(var(--scrollTop) / 2 ), 0);
+    text-transform: uppercase;
+    will-change: transform;
+    font-weight: 900;
+}
+
+.layers_title   {
+    font-size: calc(var(--index) * 2.2);
+    letter-spacing: calc(var(--index) / 3.25);
+}
+
+.layers_caption {
+    font-size: calc(var(--index) / 1.2);
+    letter-spacing: calc(var(--index) / 3.45);
+    margin-top: calc(var(--index)* -0.5);
 
 }
 
