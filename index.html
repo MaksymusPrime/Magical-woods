@@ -8,35 +8,45 @@
     <title>Magical woods</title>
 
 <link rel="stylesheet" href="css/style.css">
+<script src="libs/gsap/gsap.min.js" defer> </script>
+<script src="libs/gsap/ScrollTrigger.min.js" defer> </script>
+<script src="libs/gsap/ScrollSmoother.min.js" defer> </script>
 <script src="js/app.js" defer> </script>
+
+
 
 
 </head>
 
 <body>
     
-<header class="main-header">
-    <div class="layers">
-        <div class="layers_header">
-            <div class="layers_caption">Welcome to Parallax</div>
-            <div class="layers_title">Magical Woods</div>
+<div class="wrapper">
+    <div class="content">
+        <header class="main-header">
+            <div class="layers">
+                <div class="layers_header">
+                    <div class="layers_caption">Welcome to Parallax</div>
+                    <div class="layers_title">Magical Woods</div>
+                </div>
+        
+                <div class="layer layers_base"  style="background-image: url(/img/layer-base.png);"></div>
+                <div class="layer layers_middle" style="background-image: url(/img/layer-middle.png);"></div>
+                <div class="layer layers_front" style="background-image: url(/img/layer-front.png);"></div>
+            </div>
+        </header>
+        
+        <article class="main-article" style="background-image: url(/img/dungeon.jpg);">
+        <div class="main-article_content">
+            <h2 class="main-article_header">Endless mystery...</h2>
+            <p>Deep in the heart of a forgotten forest, a magic woods lies hidden. Shrouded in mist and ancient enchantment, these trees have been standing for centuries, whispering secrets to the wind. The air is filled with a mysterious energy, and the leaves rustle like a chorus of unknown voices. Those who dare to venture into the woods never know what they will find, for it is said that the trees can grant wishes, or take away lives. Whether you believe or not, one thing is certain - those who enter the magic woods will never be the same.</p>
         </div>
+        
+        <div class="copy">©Web-design master</div>
+        </article>
+        
 
-        <div class="layer layers_base"  style="background-image: url(/img/layer-base.png);"></div>
-        <div class="layer layers_middle" style="background-image: url(/img/layer-middle.png);"></div>
-        <div class="layer layers_front" style="background-image: url(/img/layer-front.png);"></div>
     </div>
-</header>
-
-<article class="main-article" style="background-image: url(/img/dungeon.jpg);">
-<div class="main-article_content">
-    <h2 class="main-article_header">The greatest wonders are hidden here...</h2>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae quod deleniti delectus, accusamus doloribus sed nostrum aperiam ea molestias dignissimos error, culpa possimus. Provident deserunt facere, possimus vero cum suscipit.</p>
 </div>
-
-<div class="copy">©Web-design master</div>
-</article>
-
 
 
 </body>
