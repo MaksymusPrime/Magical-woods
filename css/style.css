@@ -32,6 +32,12 @@ body {
 
 }
 
+.audio   {
+    display: none;
+}
+
+
+
 .main-header    {
     position: relative;
     color: #FFFAD7;
